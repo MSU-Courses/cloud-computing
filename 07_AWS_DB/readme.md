@@ -537,7 +537,7 @@ _Когда использовать Partition Key vs Composite Key_:
 
 ### Формат данных для загрузки в DynamoDB в виде JSON
 
-При добавлении элемента в таблицу данные передаются в формате JSON с указанием типа данных DynamoDB:
+При добавлении элемента в таблицу данные можно передать в формате JSON. Каждый атрибут элемента должен быть представлен в виде объекта, где ключ - это имя атрибута, а значение - это объект с типом и значением.
 
 ```json
 {
@@ -725,6 +725,44 @@ _Список некоторых распространенных операци
     --expression-attribute-values '{":age":{"N":"25"}}' \ # значения для фильтра
     --limit 10 # ограничение на 10 результатов
   ```
+
+### Использование AWS SDK для работы с DynamoDB
+
+Чаще всего для работы с DynamoDB используется AWS SDK, который доступен для множества языков программирования (JavaScript, Python, Java, C#, Go и др.). Например, для JavaScript (Node.js) используется пакет `@aws-sdk/client-dynamodb`.
+
+_Пример 1. Подключение к DynamoDB и добавление элемента:_
+
+```javascript
+import {
+  DynamoDBClient,
+  PutItemCommand,
+  GetItemCommand,
+} from "@aws-sdk/client-dynamodb";
+
+const client = new DynamoDBClient({ region: "us-east-1" });
+
+// Добавляем элемент
+const putCommand = new PutItemCommand({
+  TableName: "Users",
+  Item: {
+    UserID: { S: "user123" },
+    Name: { S: "Иван Иванов" },
+    Age: { N: "30" },
+    Premium: { BOOL: true },
+  },
+});
+
+await client.send(putCommand);
+
+// Читаем элемент по ключу
+const getCommand = new GetItemCommand({
+  TableName: "Users",
+  Key: { UserID: { S: "user123" } },
+});
+
+const response = await client.send(getCommand);
+console.log(response.Item);
+```
 
 ### Сценарии использования DynamoDB
 
