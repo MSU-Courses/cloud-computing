@@ -757,6 +757,7 @@ _Примеры использования KMS_:
 
 Включайте шифрование для всех сервисов, которые его поддерживают. Это добавляет защиту с минимальными накладными расходами на производительность.
 ф
+
 ## Другие сервисы безопасности AWS
 
 1. _AWS Shield_. Это управляемый сервис защиты от DDoS атак (Distributed Denial of Service) [^23]. AWS Shield работает на разных уровнях:
@@ -808,23 +809,23 @@ _Примеры использования KMS_:
 [^4]: _Louvre heist sparks cross-party ire amid reports of ‘persistent delays’ to security updates_. theartnewspaper.com [online]. Available at: https://www.theartnewspaper.com/2025/10/20/louvre-heist-sparks-ire-amid-reports-of-persistent-delays-security-updates
 [^5]: _The Louvre Used Its Own Name as a Password. Here’s What to Learn From It_. McAfee [online]. Available at: https://www.mcafee.com/blogs/security-news/the-louvre-used-its-own-name-as-a-password-heres-what-to-learn-from-it/
 [^6]: _What is IAM?_. docs.aws.amazon.com [online]. Available at: https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html
-[^7]: _Security pillar_. docs.aws.amazon.com [online]. Available at: https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/welcome.html ↩
-[^8]: _Confidentiality, integrity and availability (CIA triad)_. techtarget.com [online]. Available at: https://www.techtarget.com/searchsecurity/definition/The-CIA-triad ↩
-[^9]: _Principle of Least Privilege_. owasp.org [online]. Available at: https://owasp.org/www-community/Least_Privilege ↩
-[^10]: _Shared Responsibility Model_. aws.amazon.com [online]. Available at: https://aws.amazon.com/compliance/shared-responsibility-model/ ↩
-[^11]: _AWS ARN - Amazon Resource Names_. docs.aws.amazon.com [online]. Available at: https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html ↩
-[^12]: _AWS Identity and Access Management (IAM)_. docs.aws.amazon.com [online]. Available at: https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html ↩
-[^13]: _IAM credentials_. docs.aws.amazon.com [online]. Available at: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials.html ↩
-[^14]: _AWS Multi-factor authentication (MFA) in IAM_. docs.aws.amazon.com [online]. Available at: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa.html ↩
-[^15]: _Policies and permissions in AWS IAM_. docs.aws.amazon.com [online]. Available at: https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html ↩
-[^16]: _Security best practices in IAM_. docs.aws.amazon.com [online]. Available at: https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html ↩
-[^17]: _AWS Organizations_. docs.aws.amazon.com [online]. Available at: https://docs.aws.amazon.com/organizations/latest/userguide/what-is-aws-organizations.html ↩
-[^18]: _Service control policies (SCPs)_. docs.aws.amazon.com [online]. Available at: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html ↩
-[^19]: _AWS Secrets Manager_. docs.aws.amazon.com [online]. Available at: https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html ↩
-[^20]: _Encrypting Data at Rest and in Transit_. docs.aws.amazon.com [online]. Available at: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/overview.html ↩
-[^21]: _What is TLS/SSL and how does HTTPS secure data in transit_. designgurus.io [online]. Available at: https://designgurus.io/blog/tls-ssl-https ↩
-[^22]: _AWS Key Management Service (KMS)_. docs.aws.amazon.com [online]. Available at: https://docs.aws.amazon.com/kms/latest/developerguide/overview.html ↩
-[^23]: _AWS Shield_. aws.amazon.com [online]. Available at: https://aws.amazon.com/shield/ ↩
-[^24]: _Amazon Cognito_. docs.aws.amazon.com [online]. Available at: https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html ↩
-[^25]: _AWS Config_. docs.aws.amazon.com [online]. Available at: https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html ↩
-[^26]: _AWS CloudTrail_. docs.aws.amazon.com [online]. Available at: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html ↩
+[^7]: _Security pillar_. docs.aws.amazon.com [online]. Available at: https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/welcome.html
+[^8]: _Confidentiality, integrity and availability (CIA triad)_. techtarget.com [online]. Available at: https://www.techtarget.com/searchsecurity/definition/The-CIA-triad
+[^9]: _Principle of Least Privilege_. owasp.org [online]. Available at: https://owasp.org/www-community/Least_Privilege
+[^10]: _Shared Responsibility Model_. aws.amazon.com [online]. Available at: https://aws.amazon.com/compliance/shared-responsibility-model/
+[^11]: _AWS ARN - Amazon Resource Names_. docs.aws.amazon.com [online]. Available at: https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html
+[^12]: _AWS Identity and Access Management (IAM)_. docs.aws.amazon.com [online]. Available at: https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html
+[^13]: _IAM credentials_. docs.aws.amazon.com [online]. Available at: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials.html
+[^14]: _AWS Multi-factor authentication (MFA) in IAM_. docs.aws.amazon.com [online]. Available at: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa.html
+[^15]: _Policies and permissions in AWS IAM_. docs.aws.amazon.com [online]. Available at: https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html
+[^16]: _Security best practices in IAM_. docs.aws.amazon.com [online]. Available at: https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
+[^17]: _AWS Organizations_. docs.aws.amazon.com [online]. Available at: https://docs.aws.amazon.com/organizations/latest/userguide/what-is-aws-organizations.html
+[^18]: _Service control policies (SCPs)_. docs.aws.amazon.com [online]. Available at: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html
+[^19]: _AWS Secrets Manager_. docs.aws.amazon.com [online]. Available at: https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html
+[^20]: _Encrypting Data at Rest and in Transit_. docs.aws.amazon.com [online]. Available at: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/overview.html
+[^21]: _What is TLS/SSL and how does HTTPS secure data in transit_. designgurus.io [online]. Available at: https://designgurus.io/blog/tls-ssl-https
+[^22]: _AWS Key Management Service (KMS)_. docs.aws.amazon.com [online]. Available at: https://docs.aws.amazon.com/kms/latest/developerguide/overview.html
+[^23]: _AWS Shield_. aws.amazon.com [online]. Available at: https://aws.amazon.com/shield/
+[^24]: _Amazon Cognito_. docs.aws.amazon.com [online]. Available at: https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html
+[^25]: _AWS Config_. docs.aws.amazon.com [online]. Available at: https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html
+[^26]: _AWS CloudTrail_. docs.aws.amazon.com [online]. Available at: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html
