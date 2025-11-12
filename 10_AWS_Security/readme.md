@@ -1,4 +1,4 @@
-# Безопасность в облаке и в AWS
+# Безопасность в облаке
 
 ## Вопросы для самопроверки
 
@@ -570,12 +570,9 @@ _AWS Secrets Manager_ – это специализированный серви
 _Пример получения секрета в Node.js_:
 
 ```javascript
-import {
-  SecretsManagerClient,
-  GetSecretValueCommand,
-} from "@aws-sdk/client-secrets-manager";
+import { SecretsManagerClient, GetSecretValueCommand } from '@aws-sdk/client-secrets-manager';
 
-const client = new SecretsManagerClient({ region: "us-east-1" });
+const client = new SecretsManagerClient({ region: 'us-east-1' });
 
 async function getSecret(secretName) {
   const command = new GetSecretValueCommand({ SecretId: secretName });
@@ -584,8 +581,8 @@ async function getSecret(secretName) {
 }
 
 (async () => {
-  const secret = await getSecret("project-prod-db-password");
-  console.log("Database Password:", secret);
+  const secret = await getSecret('project-prod-db-password');
+  console.log('Database Password:', secret);
 })();
 ```
 
