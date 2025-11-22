@@ -55,7 +55,7 @@ function showHome(): void
     header('Content-Type: text/html; charset=utf-8');
     echo "<h1>Hello from " . htmlspecialchars(gethostname()) . "</h1>";
     echo "<p><a href=\"/load\">Load system (/load)</a></p>";
-    echo "<p>e.g.: <code>/load?seconds=20</code></p>";
+    echo "<p>e.g.: <code>/load?seconds=60</code></p>";
 }
 EOF
 
