@@ -218,13 +218,13 @@ _4.2. Путь одного запроса через строительные �
 
 AWS предлагает базовые образы популярных систем:
 
--Amazon Linux
--Red Hat Enterprise Linux
--Mac OS
--CentOS
--Ubuntu
--Windows Server
--другие...
+- Amazon Linux
+- Red Hat Enterprise Linux
+- Mac OS
+- CentOS
+- Ubuntu
+- Windows Server
+- другие...
 
 AMI бывают нескольких видов:
 
